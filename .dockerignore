@@ -1,5 +1,9 @@
-.gitignore
+.git*
 
 Dockerfile
 
+docker*
+
 README.md
+
+pgbouncer.ini

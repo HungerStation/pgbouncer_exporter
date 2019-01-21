@@ -158,6 +158,8 @@ func queryNamespaceMapping(ch chan<- prometheus.Metric, db *sql.DB, namespace st
 }
 
 func getDB(conn string) (*sql.DB, error) {
+	log.Infoln("Starting to connect")
+
 	db, err := sql.Open("postgres", conn)
 	if err != nil {
 		return nil, err
